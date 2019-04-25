@@ -9,10 +9,24 @@ export const DECREMENT = 'DECREMENT';
 // logic of updating the central Redux store. That
 // is left to the reducer(s).
 
-export const increment = () => {
+export const increment = count => {
   // Fill in this function
+
+  console.log('incremented')
+  
+  return {
+    type: INCREMENT,
+    payload: count
+  }
 };
 
-export const decrement = () => {
+export const decrement = count => {
   // Fill in this function
+
+  console.log('decremented')
+  
+  return {
+    type: DECREMENT,
+    payload: count
+  }
 };
